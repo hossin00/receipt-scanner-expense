@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <meta name="theme-color" content="#06b6d4"/>
+  <link rel="manifest" href="/receipt-scanner-expense/manifest.json"/>
+  <link rel="icon" href="/receipt-scanner-expense/favicon.ico"/>
+  <title>Receipt Scanner & Expense Report</title>
+  <style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Inter',sans-serif}</style>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"/>
+  <script type="module" crossorigin src="/receipt-scanner-expense/assets/index-84w_feHh.js"></script>
+  <link rel="stylesheet" crossorigin href="/receipt-scanner-expense/assets/index-DQ22NqWg.css">
+</head>
+<body>
+  <div id="root"></div>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/receipt-scanner-expense/sw.js', { scope: '/receipt-scanner-expense/' });
+      });
+    }
+  </script>
+</body>
+</html>
